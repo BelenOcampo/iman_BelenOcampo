@@ -1,0 +1,8 @@
+{
+    "editor.cursorBlinking": "expand",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#111392",
+        "titleBar.activeBackground": "#181BCC",
+        "titleBar.activeForeground": "#FCFCFF"
+    }
+}
