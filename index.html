@@ -16,61 +16,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
  
 
 <body>
     <header>
         <h4 class="cuotasMenu">3 y 6 cuotas sin interes - ENVIO GRATIS superando $20.000</h4>
-        <div class="sbboton">
-            <input type="search">
-            <button type="button">AR</button>
-            <button type="button">carrito</button>
-        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="row col-4">
+                <a class="col text-center text-dark" href="./newin/newin.html">New In</a>
+               <a class="col text-center text-dark" href="./vestidos/vestidos.html"> Vestidos </a>
+               <a class="col text-center text-dark" href="./cardigan/cardigan.html"> Cardigan</a>
+               <a class="col text-center text-dark" href="./talles/talles.html"> Talles</a>
+               <a class="col text-center text-dark" href="./accesorios/accesorios.html">Accesorios</a>
+               </div>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline.text-dark">AR</button>
+                    <button type="button" class="btn btn-outline.text-dark">Carrito</button>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
+                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z"/>
+                  </svg>
+                </form>
+              </div>
+            </div>
+          </nav>
             <nav class="logoNav">
             <a href="./index.html">
                 <img class="logo" src="../img/logo.png">
                </a>
-    
-               <a href="./newin/newin.html">New In</a>
-               <a href="./vestidos/vestidos.html"> Vestidos </a>
-               <a href="./cardigan/cardigan.html"> Cardigan</a>
-               <a href="./talles/talles.html"> Talles</a>
-               <a href="./accesorios/accesorios.html">Accesorios</a>
             </nav>
     </header>
     <main class="main-i">
-        <div class="encabezado">
-           <div class="modelosUno">
-            <img src="./img/iman modelos 1.jpg" alt="money" class="modelUno"></div>
         
-            <div class="modelos">
-             <img src="./img/iman modelos 2.jpg" alt="money" class="modelos"></div>
-             
-             <div class="newSeason">
-                <h2>New Season</h2>
-            <h3 class="new">Conoce lo nuevo</h3>
-        </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/sasasasa.jpg" class="d-block w-100" alt="160%">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/asasss.jpg" class="d-block w-100" alt="100%">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
     
         </div>
-        
-
     </main> 
+
     <div class="divrelleno"></div>
 
     <section class="sectionUno">
         
             <div class="newInUno" >
-        <img src="./img/One-shots(Dabi x Rayito).jpg" >
+        <img src="./img/pantalonesimanç.jpeg" >
         <h2>New In</h2>
         <h3>CONJUNTOS</h3> 
         <p><a href="#">Ver Mas</a></p>
     </div>
 
         <div class="newInDos">
-        <img src="./img/sasasa.jpg">
+        <img src="./img/faldaiman.jpeg">
         <h2>New In</h2>
-        <h3>ZAPATOS</h3>
+        <h3>FALDAS</h3>
         <p><a href="#">Ver Mas</a></p>
     </div>
     
@@ -78,16 +103,16 @@
   
     <section class="sectionDos">
         <div class="newInTres">
-        <img src="./img/Caras para tu RD 🧚🏼_♀️_      (Y una u otra cosa más)🦕.jpg">
+        <img src="./img/topIman.jpeg">
         <h2>New In</h2>
         <h3>TOPS</h3> 
         <p><a href="#">Ver Mas</a></p> 
     </div>
     
      <div class="newInCuatro">
-        <img src="./img/descarga (3).jpg">
+        <img src="./img/bikiniiman.jpg">
         <h2>New In</h2>
-        <h3>BOTTOM</h3> 
+        <h3>BIKINI</h3> 
        <p><a href="#">Ver Mas</a></p> 
     </div>
     </section>
@@ -129,6 +154,6 @@
     
     <i class="fa-solid fa-headset animate__animated animate__swing animate__infinite"></i>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
