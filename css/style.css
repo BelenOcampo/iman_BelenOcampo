@@ -203,6 +203,7 @@ left: 200px;
 .sectionUno{
 display: inline-flex;
 grid-area: section_uno;
+margin-top: -20%;
 }
 .sectionDos{
     display: inline-flex;
@@ -369,17 +370,21 @@ margin: 2% 8% 0% 33%;
    
  }
  .newin3 img{
-    width: 500px;
+    width: 85%;
     border: 10px solid #94a36d6b;
    display: flex;
    justify-content: space-around;
+   height: 85%;
    margin: 2% 8% 0% 33%;
+   margin-left: 10%;
  }
 
  .newin4 img{
-    height: 617px;
+    height: 85%;
     border: 10px solid #94a36d6b;
    display: flex;
+   width: 85%;
+   margin-left: 10%;
    justify-content: space-around;
    margin: 2% 8% 0% 33%;
    
