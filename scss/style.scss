@@ -125,7 +125,8 @@ text-align: left;
 
 .cuotasMenu{
     margin: 0% 0% 4% 0%;
-    color: white; background-color: #622e637a;
+    color: white;
+     background-color: #622e637a;
     text-align: center;
 }
 .encabezado{
@@ -194,7 +195,7 @@ margin: 3.10% 10.60% 10% 2.40%;
 }
 .newInDos img{
     height: 650px;
-    width: 500px;
+    @extend $ancho-img*2;
     border: 8px solid transparent;
    display: flex;
    justify-content: space-around;
@@ -213,7 +214,8 @@ margin-top: -20%;
     display: inline-flex;
     justify-content:space-evenly;
     width: 100%;
-    grid-area: section_dos;}
+    grid-area: section_dos;
+}
 
 h2, h3, p{
     text-align: center;
@@ -223,12 +225,12 @@ h2, h3, p{
     text-align: center;
 }
 .newInTres img{
-    width: 500px;
+    @extend $ancho-img*2;
     height: 650px;
     margin: 0% 30% 0% 5%;
 }
 .newInCuatro{
-    width: 500px;
+    @extend $ancho-img*2;
     height: 759px;
 }
 .newInCuatro img{
@@ -252,10 +254,9 @@ font-family: 'Roboto Flex', sans-serif;
 
 /*                 INICIO DE IMAN VESTIDOS                   */
     .sectionVestidos1 img{
-    width: 500px;
-    border: 10px solid #94a36d6b;
-    display: flex;
-   justify-content: space-around;
+    @extend $ancho-img*2;
+    @extend %bordes;
+    @extend %display;
     margin: 2% 8% 0% 33%;    
     }
      .vestidoUno{
@@ -264,10 +265,9 @@ font-family: 'Roboto Flex', sans-serif;
      }
 
      .sectionVestidos2 img{
-        width: 500px;
-        border: 10px solid #94a36d6b;
-        display: flex;
-       justify-content: space-around;
+        @extend $ancho-img*2;
+        @extend %bordes;
+        @extend %display;
         margin: 2% 8% 0% 33%;    
      }
      .vestidoDos{
@@ -285,18 +285,16 @@ font-family: 'Roboto Flex', sans-serif;
      }
 
      .sectionVestidos3 img{
-        width: 500px;
-        border: 10px solid #94a36d6b;
-        display: flex;
-       justify-content: space-around;
+        @extend $ancho-img*2;
+        @extend %bordes;
+        @extend %display;
         margin: 2% 8% 0% 33%;    
      }
 
      .sectionVestidos4 img{
-        width: 500px;
-        border: 10px solid #94a36d6b;
-       display: flex;
-       justify-content: space-around;
+        @extend $ancho-img*2;
+        @extend %bordes;
+        @extend %display;
         margin: 2% 8% 0% 33%;    
      }
 
@@ -352,9 +350,8 @@ font-family: 'Roboto Flex', sans-serif;
 .newin1 img{
 width: 500px;
 border: 10px solid #94a36d6b;
-display: flex;
 top: 20px;
-justify-content: space-around;
+@extend %display;
 margin: 2% 8% 0% 33%;
 }
 .newinUno{
@@ -368,32 +365,30 @@ margin: 2% 8% 0% 33%;
  .newin2 img{
     width: 500px;
     border: 10px solid #94a36d6b;
-   display: flex;
-   justify-content: space-around;
    margin: 2% 8% 0% 33%;
+   @extend %display;
    
  }
  .newin3 img{
     width: 85%;
     border: 10px solid #94a36d6b;
-   display: flex;
-   justify-content: space-around;
    height: 85%;
    margin: 2% 8% 0% 33%;
    margin-left: 10%;
+   @extend %display;
  }
 
  .newin4 img{
     height: 85%;
     border: 10px solid #94a36d6b;
-   display: flex;
-   width: 85%;
-   margin-left: 10%;
-   justify-content: space-around;
+   width: 20%;
+   margin-left: 5%;
    margin: 2% 8% 0% 33%;
+   @extend %display;
    
  }
  .newin1{
+    @extend %display;
     text-align: center;
     margin: 0% 0% 2% 0%;
 }
@@ -499,3 +494,11 @@ margin: 2% 8% 0% 33%;
     }
 
 }
+
+@import"./base/extend.scss";
+
+@import"./variables.scss";
+
+@import"./base/operadores.scss"
+
+@import"./base/mixin.scss"
