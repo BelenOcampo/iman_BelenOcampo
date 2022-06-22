@@ -70,7 +70,8 @@ main4{
     bottom: 5px;
 }
 .fa-whatsapp{
-    color: white;
+    colorposition :map-get($colorposition,white);
+    colorposition :map-get( $colorposition,position);
     font-size: 25px;
     left: 698px;
     top: 2741px;
@@ -195,7 +196,7 @@ margin: 3.10% 10.60% 10% 2.40%;
 }
 .newInDos img{
     height: 650px;
-    @extend $ancho-img*2;
+    @extend %ancho-img *2;
     border: 8px solid transparent;
    display: flex;
    justify-content: space-around;
@@ -225,12 +226,12 @@ h2, h3, p{
     text-align: center;
 }
 .newInTres img{
-    @extend $ancho-img*2;
+    @extend %ancho-img *2;
     height: 650px;
     margin: 0% 30% 0% 5%;
 }
 .newInCuatro{
-    @extend $ancho-img*2;
+    @extend %ancho-img *2;
     height: 759px;
 }
 .newInCuatro img{
@@ -254,7 +255,7 @@ font-family: 'Roboto Flex', sans-serif;
 
 /*                 INICIO DE IMAN VESTIDOS                   */
     .sectionVestidos1 img{
-    @extend $ancho-img*2;
+    @extend %ancho-img *2;
     @extend %bordes;
     @extend %display;
     margin: 2% 8% 0% 33%;    
@@ -265,7 +266,7 @@ font-family: 'Roboto Flex', sans-serif;
      }
 
      .sectionVestidos2 img{
-        @extend $ancho-img*2;
+        @extend %ancho-img *2;
         @extend %bordes;
         @extend %display;
         margin: 2% 8% 0% 33%;    
@@ -285,14 +286,14 @@ font-family: 'Roboto Flex', sans-serif;
      }
 
      .sectionVestidos3 img{
-        @extend $ancho-img*2;
+        
         @extend %bordes;
         @extend %display;
         margin: 2% 8% 0% 33%;    
      }
 
      .sectionVestidos4 img{
-        @extend $ancho-img*2;
+        @extend %ancho-img *2;
         @extend %bordes;
         @extend %display;
         margin: 2% 8% 0% 33%;    
@@ -499,6 +500,6 @@ margin: 2% 8% 0% 33%;
 
 @import"./variables.scss";
 
-@import"./base/operadores.scss"
+@import"./base/mixin.scss";
 
-@import"./base/mixin.scss"
+@import"./base/mixin.scss";
