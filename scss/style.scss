@@ -6,6 +6,15 @@ html{
 background-color: #e7dbe534
 }
 
+@import"./base/extend.scss";
+
+@import"./variables.scss";
+
+@import"./base/operadores.scss";
+
+@import"./base/mixin.scss";
+
+
 body{
     display: grid;
     grid-template-columns: 100%;
@@ -169,6 +178,7 @@ margin: 3.10% 10.60% 10% 2.40%;
 }
 
 
+
 .newInDos{
     margin: 9% 0% 0% 1%;
     text-align: center;
@@ -195,7 +205,7 @@ margin: 3.10% 10.60% 10% 2.40%;
 }
 .newInDos img{
     height: 650px;
-    @extend $ancho-img*2;
+    width: $ancho-img*2;
     border: 8px solid transparent;
    display: flex;
    justify-content: space-around;
@@ -225,12 +235,12 @@ h2, h3, p{
     text-align: center;
 }
 .newInTres img{
-    @extend $ancho-img*2;
+    width: $ancho-img*2;
     height: 650px;
     margin: 0% 30% 0% 5%;
 }
 .newInCuatro{
-    @extend $ancho-img*2;
+    width: $ancho-img*2;
     height: 759px;
 }
 .newInCuatro img{
@@ -254,7 +264,7 @@ font-family: 'Roboto Flex', sans-serif;
 
 /*                 INICIO DE IMAN VESTIDOS                   */
     .sectionVestidos1 img{
-    @extend $ancho-img*2;
+    width: $ancho-img*2;
     @extend %bordes;
     @extend %display;
     margin: 2% 8% 0% 33%;    
@@ -265,7 +275,7 @@ font-family: 'Roboto Flex', sans-serif;
      }
 
      .sectionVestidos2 img{
-        @extend $ancho-img*2;
+        width: $ancho-img*2;
         @extend %bordes;
         @extend %display;
         margin: 2% 8% 0% 33%;    
@@ -285,14 +295,14 @@ font-family: 'Roboto Flex', sans-serif;
      }
 
      .sectionVestidos3 img{
-        @extend $ancho-img*2;
+        width: $ancho-img*2;
         @extend %bordes;
         @extend %display;
         margin: 2% 8% 0% 33%;    
      }
 
      .sectionVestidos4 img{
-        @extend $ancho-img*2;
+        width: $ancho-img*2;
         @extend %bordes;
         @extend %display;
         margin: 2% 8% 0% 33%;    
@@ -462,43 +472,70 @@ margin: 2% 8% 0% 33%;
         margin: 0% 0% 0% 0%;
         
     }
-    .newInDos{ 
-        margin: 0% 0% 0% 0%;
-    }
+    
     .newInUno img {
         height: none;
-        width: 98%;
+        width: none;
+        margin:none;
+        margin-left: 10%;
     }
-    .newInDos img{
+
+    .main1 .newin1{
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    }
+
+    .main2{
+        width: auto;
+    }
+
+    .newin2{
+        width: 100%;
+    }
+
+    .newin2 img {
+        width: 100%;
+        border: 10px solid rgba(148, 163, 109, 0.4196078431);
         margin: 0;
-        border: none;
-        width: 392px;
     }
+
+
     .sectionDos{
         flex-direction: column;
     }
-    .newInTres{
+    .newInDos{
         height: auto;
         width: auto;
         
     }
+    .newInDos img{
+        margin: 0;
+        margin:none;
+        margin-left: 10%;
+    }
+
     .newInTres img{
         margin: 0;
     }
-    .newInCuatro{
+    
+    
+    .newInDosResponsive {
         height: auto;
         width: auto;
+        margin: 0;
+        img {margin: 0%;}
+        
     }
-    .fa-headset{
-        left: 10px;
+    .imgResponsive{
+        display: flex;
+        align-content: center;
+    align-items: center;
     }
 
+    header .navbar{
+    flex-wrap: nowrap;
+    } 
 }
 
-@import"./base/extend.scss";
 
-@import"./variables.scss";
-
-@import"./base/operadores.scss"
-
-@import"./base/mixin.scss"

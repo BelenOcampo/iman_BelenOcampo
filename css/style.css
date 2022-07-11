@@ -7,6 +7,18 @@ html {
   background-color: rgba(231, 219, 229, 0.2039215686);
 }
 
+.newin1, .newin4 img, .newin3 img, .newin2 img, .newin1 img, .sectionVestidos4 img, .sectionVestidos3 img, .sectionVestidos2 img, .sectionVestidos1 img {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.sectionVestidos4 img, .sectionVestidos3 img, .sectionVestidos2 img, .sectionVestidos1 img {
+  border: 10px solid rgba(148, 163, 109, 0.4196078431);
+}
+
 body {
   display: grid;
   grid-template-columns: 100%;
@@ -265,9 +277,6 @@ h1 {
 /*                 INICIO DE IMAN VESTIDOS                   */
 .sectionVestidos1 img {
   width: 500px;
-  border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  justify-content: space-around;
   margin: 2% 8% 0% 33%;
 }
 
@@ -278,9 +287,6 @@ h1 {
 
 .sectionVestidos2 img {
   width: 500px;
-  border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  justify-content: space-around;
   margin: 2% 8% 0% 33%;
 }
 
@@ -302,17 +308,11 @@ h1 {
 
 .sectionVestidos3 img {
   width: 500px;
-  border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  justify-content: space-around;
   margin: 2% 8% 0% 33%;
 }
 
 .sectionVestidos4 img {
   width: 500px;
-  border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  justify-content: space-around;
   margin: 2% 8% 0% 33%;
 }
 
@@ -373,9 +373,7 @@ h1 {
 .newin1 img {
   width: 500px;
   border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
   top: 20px;
-  justify-content: space-around;
   margin: 2% 8% 0% 33%;
 }
 
@@ -390,16 +388,12 @@ h1 {
 .newin2 img {
   width: 500px;
   border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  justify-content: space-around;
   margin: 2% 8% 0% 33%;
 }
 
 .newin3 img {
   width: 85%;
   border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  justify-content: space-around;
   height: 85%;
   margin: 2% 8% 0% 33%;
   margin-left: 10%;
@@ -408,10 +402,8 @@ h1 {
 .newin4 img {
   height: 85%;
   border: 10px solid rgba(148, 163, 109, 0.4196078431);
-  display: flex;
-  width: 85%;
-  margin-left: 10%;
-  justify-content: space-around;
+  width: 20%;
+  margin-left: 5%;
   margin: 2% 8% 0% 33%;
 }
 
@@ -491,34 +483,58 @@ h1 {
   .newInUno {
     margin: 0% 0% 0% 0%;
   }
-  .newInDos {
-    margin: 0% 0% 0% 0%;
-  }
   .newInUno img {
     height: none;
-    width: 98%;
+    width: none;
+    margin: none;
+    margin-left: 10%;
   }
-  .newInDos img {
+  .main1 .newin1 {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .main2 {
+    width: auto;
+  }
+  .newin2 {
+    width: 100%;
+  }
+  .newin2 img {
+    width: 100%;
+    border: 10px solid rgba(148, 163, 109, 0.4196078431);
     margin: 0;
-    border: none;
-    width: 392px;
   }
   .sectionDos {
     flex-direction: column;
   }
-  .newInTres {
+  .newInDos {
     height: auto;
     width: auto;
+  }
+  .newInDos img {
+    margin: 0;
+    margin: none;
+    margin-left: 10%;
   }
   .newInTres img {
     margin: 0;
   }
-  .newInCuatro {
+  .newInDosResponsive {
     height: auto;
     width: auto;
+    margin: 0;
   }
-  .fa-headset {
-    left: 10px;
+  .newInDosResponsive img {
+    margin: 0%;
+  }
+  .imgResponsive {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+  header .navbar {
+    flex-wrap: nowrap;
   }
 }
 

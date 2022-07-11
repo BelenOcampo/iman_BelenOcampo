@@ -1,9 +1,13 @@
 %display{
  display: flex;
  justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 
 }
 
 %bordes{
     border: 10px solid #94a36d6b;
 }
+
